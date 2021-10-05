@@ -93,6 +93,7 @@ public class Trump extends AdvancedRobot{
         }
         if(e.getName().equals(targ)){ // if the robot scanned is our target
             spins = 0; // reset radar spin counter
+            System.out.println(e.getName());
 
             // if the enemy fires, with a 15% chance,
             if((prevE < (prevE = (short)e.getEnergy())) && Math.random() > .85){
